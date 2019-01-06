@@ -21,7 +21,7 @@ a {
 }
 
 /* 2. Shared */
-wallpaper,
+.wallpaper,
 .picture-shadow,
 .picture-image {
     display: block;
