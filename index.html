@@ -9,15 +9,17 @@
     <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer type="text/javascript" src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wallpaper"></div>
+    <div id="wallpaper" class="wallpaper" data-image="./images/yosemite.jpg"></div>
     <div class="content">
         <aside class="side">
-            <figure class="picture">
+            <figure id="picture" class="picture">
                 <div class="picture-shadow"></div>
-                <img id="pictureImage" class="picture-image"
+                <img id="pictureImage"
+                     class="picture-image"
                      src="./images/BeldenBlaze.jpg"
                      srcset="./images/BeldenBlaze.jpg 1x,
                              ./images/BeldenBlaze@2x.jpg 2x,
@@ -66,5 +68,16 @@
             </ul>
         </main>
     </div>
+    <noscript>
+        <style type="text/css">
+            .wallpaper {
+                animation-name: zoomOut;
+            }
+    
+            .picture {
+                animation-name: dropIn;
+            }
+        </style>
+    </noscript>
 </body>
 </html>
